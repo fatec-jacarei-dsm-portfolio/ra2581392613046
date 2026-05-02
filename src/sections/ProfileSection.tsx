@@ -1,6 +1,7 @@
 import React from 'react';
 import minhaFoto from '../assets/foto-perfil.jpg'; 
 import faculdadeFoto from '../assets/fatec-jacarei.jpg'; 
+import linkedinIcon from '../../public/Linkedin.svg';
 import '../App.css'; 
 
 const ProfileSection: React.FC = () => {
@@ -34,7 +35,7 @@ const ProfileSection: React.FC = () => {
             >
               {/* O ÍCONE DO PUBLIC AQUI */}
               <img 
-                src="Linkedin.svg" 
+                src={linkedinIcon} 
                 alt="LinkedIn" 
                 style={{ width: '20px', height: '20px' }} 
               />

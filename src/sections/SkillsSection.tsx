@@ -1,33 +1,45 @@
 import React from 'react';
 import ciscoBadge from '../assets/cisco-badge.png';
+import reactIcon from '../../public/react.svg';
+import typescriptIcon from '../../public/typescript.svg';
+import html5Icon from '../../public/html5.svg';
+import css3Icon from '../../public/css3.svg';
+import pythonIcon from '../../public/python.svg';
+import nodejsIcon from '../../public/nodejs.svg';
+import postgresqlIcon from '../../public/postgresql.svg';
+import sqlserverIcon from '../../public/sqlserver.svg';
+import dockerIcon from '../../public/docker.svg';
+import githubIcon from '../../public/github.svg';
+import viteIcon from '../../public/vite.svg';
+import chocolateyIcon from '../../public/chocolatey.svg';
 
 const SkillsSection: React.FC = () => {
   const skillGroups = [
     {
       titulo: "Frontend",
       skills: [
-        { nome: "React", icon:"react.svg" },
-        { nome: "TypeScript", icon: "typescript.svg" },
-        { nome: "HTML5", icon: "html5.svg" },
-        { nome: "CSS3 / Tailwind", icon: "css3.svg" }
+        { nome: "React", icon: reactIcon },
+        { nome: "TypeScript", icon: typescriptIcon },
+        { nome: "HTML5", icon: html5Icon },
+        { nome: "CSS3 / Tailwind", icon: css3Icon }
       ]
     },
     {
       titulo: "Backend & DB",
       skills: [
-        { nome: "Python", icon: "python.svg" },
-        { nome: "Node.js", icon: "nodejs.svg" },
-        { nome: "PostgreSQL", icon: "postgresql.svg" },
-        { nome: "SQL Server", icon: "sqlserver.svg" }
+        { nome: "Python", icon: pythonIcon },
+        { nome: "Node.js", icon: nodejsIcon },
+        { nome: "PostgreSQL", icon: postgresqlIcon },
+        { nome: "SQL Server", icon: sqlserverIcon }
       ]
     },
     {
       titulo: "Ferramentas & Outros",
       skills: [
-        { nome: "Docker", icon: "docker.svg" },
-        { nome: "Git/GitHub", icon: "github.svg" },
-        { nome: "Vite", icon: "vite.svg" },
-        { nome: "Chocolatey", icon: "chocolatey.svg" }
+        { nome: "Docker", icon: dockerIcon },
+        { nome: "Git/GitHub", icon: githubIcon },
+        { nome: "Vite", icon: viteIcon },
+        { nome: "Chocolatey", icon: chocolateyIcon }
       ]
     }
   ];
@@ -47,7 +59,7 @@ const SkillsSection: React.FC = () => {
             <ul style={styles.list}>
               {group.skills.map(skill => (
                 <li key={skill.nome} style={styles.listItem}>
-                  <img src={skill.icon} alt="" style={styles.skillIcon} />
+                  <img src={skill.icon as string} alt="" style={styles.skillIcon} />
                   {skill.nome}
                 </li>
               ))}

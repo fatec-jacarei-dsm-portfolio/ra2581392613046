@@ -1,32 +1,33 @@
 import React from 'react';
+import ciscoBadge from '../assets/cisco-badge.png';
 
 const SkillsSection: React.FC = () => {
   const skillGroups = [
     {
       titulo: "Frontend",
       skills: [
-        { nome: "React", icon: "/public/react.svg" },
-        { nome: "TypeScript", icon: "/public/typescript.svg" },
-        { nome: "HTML5", icon: "/public/html5.svg" },
-        { nome: "CSS3 / Tailwind", icon: "/public/css3.svg" }
+        { nome: "React", icon:"react.svg" },
+        { nome: "TypeScript", icon: "typescript.svg" },
+        { nome: "HTML5", icon: "html5.svg" },
+        { nome: "CSS3 / Tailwind", icon: "css3.svg" }
       ]
     },
     {
       titulo: "Backend & DB",
       skills: [
-        { nome: "Python", icon: "/public/python.svg" },
-        { nome: "Node.js", icon: "/public/nodejs.svg" },
-        { nome: "PostgreSQL", icon: "/public/postgresql.svg" },
-        { nome: "SQL Server", icon: "/public/sqlserver.svg" }
+        { nome: "Python", icon: "python.svg" },
+        { nome: "Node.js", icon: "nodejs.svg" },
+        { nome: "PostgreSQL", icon: "postgresql.svg" },
+        { nome: "SQL Server", icon: "sqlserver.svg" }
       ]
     },
     {
       titulo: "Ferramentas & Outros",
       skills: [
-        { nome: "Docker", icon: "/public/docker.svg" },
-        { nome: "Git/GitHub", icon: "/public/github.svg" },
-        { nome: "Vite", icon: "/public/vite.svg" },
-        { nome: "Chocolatey", icon: "/public/chocolatey.svg" }
+        { nome: "Docker", icon: "docker.svg" },
+        { nome: "Git/GitHub", icon: "github.svg" },
+        { nome: "Vite", icon: "vite.svg" },
+        { nome: "Chocolatey", icon: "chocolatey.svg" }
       ]
     }
   ];
@@ -71,7 +72,7 @@ const SkillsSection: React.FC = () => {
             className="cisco-pop-card"
           >
             <img 
-              src="/src/assets/cisco-badge.png" 
+              src={ciscoBadge} 
               alt="Cisco Badge" 
               style={styles.certImage} 
             />

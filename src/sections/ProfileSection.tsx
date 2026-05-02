@@ -34,8 +34,8 @@ const ProfileSection: React.FC = () => {
             >
               {/* O ÍCONE DO PUBLIC AQUI */}
               <img 
-                src="/public/Linkedin.svg" 
-                alt="" 
+                src="Linkedin.svg" 
+                alt="LinkedIn" 
                 style={{ width: '20px', height: '20px' }} 
               />
               LinkedIn

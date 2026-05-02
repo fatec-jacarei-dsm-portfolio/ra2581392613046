@@ -1,3 +1,4 @@
+//Meu dog se chama Lord, então decidi criar um easter egg com ele aparecendo no rodapé do site. Ele é um sprite pixel art que fica escondido e só aparece quando o rodapé entra na tela. Quando o usuário passa o mouse sobre ele, ele começa a andar, mostrando uma animação de caminhada. É uma forma divertida de agradecer aos visitantes e adicionar um toque de personalidade ao site!
 import React, { useEffect, useRef, useState } from 'react';
 import lordSprite from '../assets/lordSprite.png'; 
 

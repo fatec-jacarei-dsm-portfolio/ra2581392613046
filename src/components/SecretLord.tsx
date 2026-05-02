@@ -1,6 +1,8 @@
 //Meu dog se chama Lord, então decidi criar um easter egg com ele aparecendo no rodapé do site. Ele é um sprite pixel art que fica escondido e só aparece quando o rodapé entra na tela. Quando o usuário passa o mouse sobre ele, ele começa a andar, mostrando uma animação de caminhada. É uma forma divertida de agradecer aos visitantes e adicionar um toque de personalidade ao site!
 import React, { useEffect, useRef, useState } from 'react';
-import lordSprite from '../assets/lordSprite.png'; 
+import lordSprite from '../assets/lordSprite.png';
+import githubIcon from '../../public/github (2).svg';
+import gmailIcon from '../../public/gmail.svg'; 
 
 const PixelArtFooter: React.FC = () => {
   const footerRef = useRef<HTMLElement | null>(null);
@@ -36,12 +38,12 @@ const PixelArtFooter: React.FC = () => {
 
           <div style={styles.contactLinks}>
             <a href="https://github.com/NadlaFernandes" target="_blank" rel="noreferrer" style={styles.linkItem}>
-              <img src="/public/github (2).svg" alt="" style={styles.smallIcon} />
+              <img src={githubIcon} alt="" style={styles.smallIcon} />
               <span>/NadlaFernandes</span>
             </a>
 
             <a href="mailto:nf17476@gmail.com" style={styles.linkItem}>
-              <img src="/public/gmail.svg" alt="" style={styles.smallIcon} />
+              <img src={gmailIcon} alt="" style={styles.smallIcon} />
               <span>nf17476@gmail.com</span>
             </a>
           </div>

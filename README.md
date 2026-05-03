@@ -1,2 +1,17 @@
-# ra2581392613046
-Repositório do aluno NADLA FERNANDES FERREIRA.
+<h1 align="left">Portifólio Nadla Fernandes Ferreira</h1>
+
+###
+
+<h3 align="left">ALUNA: Nadla Fernandes Ferreira<br>PERÍODO: 2° Semestre<br>RA: 2581392613046</h3>
+
+###
+
+<div>
+  <img style="100%" src="https://capsule-render.vercel.app/api?type=speech&height=100&section=header&reversal=false&text=Bem%20vindo%20ao%20reposit%C3%B3rio%20do%20meu%20Portif%C3%B3lio!&fontSize=31&fontColor=FF00FF&fontAlign=50&fontAlignY=50&rotate=0&stroke=-&strokeWidth=0&animation=twinkling&descSize=20&descAlign=50&descAlignY=50&textBg=false&theme=radical"  /> 
+</div>
+
+###
+
+<p align="left">Aqui está organizado os códigos que permitem que a página funcione corretamente.<br><br>Além disso, abaixo segue os links da página e do vídeo de apresentação:<br><br>👩‍💻: <a href="https://nadlafernandes.github.io/Nadla_Portifolio/" target="_blank">https://nadlafernandes.github.io/Nadla_Portifolio/</a><br><br>📹: <a href="COLE_AQUI_O_LINK_DO_VIDEO" target="_blank">Link do vídeo</a></p>
+
+###

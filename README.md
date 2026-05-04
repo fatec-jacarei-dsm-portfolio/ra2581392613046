@@ -1,8 +1,8 @@
-<h1 align="left">Portifólio Nadla Fernandes Ferreira</h1>
+<h1 align="left">Portifólio de Projetos Nadla Fernandes Ferreira</h1>
 
 ###
 
-<h3 align="left">ALUNA: Nadla Fernandes Ferreira<br>PERÍODO: 2° Semestre<br>RA: 2581392613046</h3>
+<h3 align="left">ALUNA: Nadla Fernandes Ferreira<br>RA: 258139261304<br>TURMA: 2° Semestre<br> CURSO: Desenvolvimento de Software Multiplataforma 2026</h3>
 
 ###
 

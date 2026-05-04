@@ -2,7 +2,7 @@
 
 ###
 
-<h3 align="left">ALUNA: Nadla Fernandes Ferreira<br>RA: 258139261304<br>TURMA: 2° Semestre<br> CURSO: Desenvolvimento de Software Multiplataforma 2026</h3>
+<h3 align="left">ALUNA: Nadla Fernandes Ferreira<br>RA: 258139261304<br>TURMA: 2° Semestre de 2026<br> CURSO: Desenvolvimento de Software Multiplataforma</h3>
 
 ###
 

@@ -15,3 +15,11 @@
 <p align="left">Aqui está organizado os códigos que permitem que a página funcione corretamente.<br><br>Além disso, abaixo segue os links da página e do vídeo de apresentação:<br><br>👩‍💻: <a href="https://nadlafernandes.github.io/Nadla_Portifolio/" target="_blank">https://nadlafernandes.github.io/Nadla_Portifolio/</a><br><br>📹: <a href="https://www.youtube.com/watch?v=ZsluUFSEWAY" target="_blank">Link do vídeo</a></p>
 
 ###
+
+<p align="left">
+🔓: <a href="https://github.com/NadlaFernandes/Nadla_Portifolio" target="_blank">Link para o código completo no meu perfil principal</a>
+</p>
+
+<p align="left">
+(obs: não consegui criar a página por esse repositório, então criei no que está no meu perfil principal e coloquei o link aqui.)
+</p>

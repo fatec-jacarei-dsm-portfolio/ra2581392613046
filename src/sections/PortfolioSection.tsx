@@ -6,35 +6,35 @@ interface Projeto {
   descricao: string;
   tags: string[];
   link: string;
-  categoria: 'Acadêmico' | 'Pessoal' | 'ABP'| 'Acadêmico | Pessoal';
+  categoria: 'Acadêmico' | 'Pessoal' | 'ABP' | 'Acadêmico | Pessoal';
 }
 
 const PortfolioSection: React.FC = () => {
   const meusProjetos: Projeto[] = [
     {
       titulo: "Repositório de Banco de Dados Relacional (2º Semestre)",
-      descricao: "Repositório contendo arquivos de aulas e atividades da disciplina de Banco de Dados - Relacional (2º Semestre) minitradas pela professora Lucineide Pimenta.",
+      descricao: "Repositório contendo arquivos de aulas e atividades da disciplina de Banco de Dados Relacional (2º Semestre), ministradas pela professora Lucineide Pimenta.",
       tags: ["SQL", "PostgreSQL", "Banco de Dados Relacional"],
       link: "https://github.com/NadlaFernandes/FATEC-JCR-2DSM-BDR-2026-1-Nadla-Fernandes-Ferreira", 
       categoria: "Acadêmico"
     },
     {
       titulo: "Servidor Mega-Sena",
-      descricao: "Aplicação Full-Stack com frontend em React e backend em Node.js (Express) utilizando Docker para o banco de dados.",
+      descricao: "Aplicação full-stack com frontend em React e backend em Node.js (Express), utilizando Docker para o banco de dados.",
       tags: ["React", "Node.js", "Docker", "Prisma"],
       link: "https://github.com/NadlaFernandes/Atividade-3-Mega-Sena-Desenvolvimento-Web-II",
       categoria: "Acadêmico"
     },
     {
       titulo: "Site Reciclagem",
-      descricao: "Site criado durante o periodo em que eu estava matriculada no ICT - UNIFESP para a disciplina de Tecnologia e Meio Ambiente (TMA). Tem como objetivo conscientizar as pessoas sobre a importância da reciclagem e como ela pode ajudar a preservar o meio ambiente.",
+      descricao: "Site criado durante o período em que eu estava matriculada no ICT - UNIFESP para a disciplina de Tecnologia e Meio Ambiente (TMA). Tem como objetivo conscientizar as pessoas sobre a importância da reciclagem e como ela pode ajudar a preservar o meio ambiente.",
       tags: ["CSS", "JavaScript", "HTML"],
       link: "https://github.com/NadlaFernandes/nosso-site-reciclagem",
       categoria: "Acadêmico | Pessoal",
     },
     {
       titulo: "API - REST",
-      descricao: "Atividade 4 da disciplina de Desenvolvimento Web II com foco em desenvolver uma aplicação frontend em React TypeScript para consumir a API REST implementada na atvidade 1 de Técnicasde Programação I.",
+      descricao: "Atividade 4 da disciplina de Desenvolvimento Web II, com foco em desenvolver uma aplicação frontend em React TypeScript para consumir a API REST implementada na atividade 1 de Técnicas de Programação I.",
       tags: ["CSS", "TypeScript", "HTML", "Dockerfile"],
       link: "https://github.com/NadlaFernandes/API-REST",
       categoria: "Acadêmico",
@@ -52,19 +52,39 @@ const PortfolioSection: React.FC = () => {
       tags: ["TypeScript", "JavaScript", "HTML"],
       link: "https://github.com/NadlaFernandes/atividade-mega-sena", 
       categoria: "Acadêmico"
+    },
+    {
+      titulo: "ABP - Chatbot Fatec Jacareí",
+      descricao: "Projeto em desenvolvimento feito pelo grupo Undefined para a ABP, com o objetivo de criar um chatbot para a secretaria acadêmica da FATEC Jacareí. Estou atuando como desenvolvedora backend no projeto.",
+      tags: ["TypeScript", "JavaScript", "HTML", "SQL"],
+      link: "https://github.com/abpundefined/2DSM-ABP-UNDEFINED", 
+      categoria: "ABP"
     }
   ];
 
   return (
     <div style={styles.container}>
       <h2 style={styles.sectionTitle}>02. Projetos & Experiência</h2>
+      <p style={styles.sectionNote}>
+        * Não possuo projetos anteriores ao 2° semestre.
+      </p>
       
       <div style={styles.grid}>
         {meusProjetos.map((proj, index) => (
-          <div key={index} style={styles.card}>
+          <div key={index} style={styles.card} className="portfolio-card">
             <div style={styles.cardHeader}>
               <span style={styles.category}>{proj.categoria}</span>
-              <a href={proj.link} target="_blank" rel="noreferrer" style={styles.githubIcon}>🔗</a>
+              <a
+                href={proj.link}
+                target="_blank"
+                rel="noreferrer"
+                style={styles.githubIcon}
+                className="project-link"
+                aria-label={`Abrir repositório: ${proj.titulo}`}
+                title="Abrir repositório"
+              >
+                🔗
+              </a>
             </div>
             
             <h3 style={styles.cardTitle}>{proj.titulo}</h3>
@@ -91,8 +111,16 @@ const styles = {
     color: '#ffffff',
     borderBottom: '1px solid #00ff41',
     display: 'inline-block',
-    marginBottom: '40px',
+    marginBottom: '12px',
     fontFamily: 'Cascadia Code',
+  },
+  sectionNote: {
+    color: '#cccccc',
+    fontSize: '1rem',
+    lineHeight: '1.5',
+    margin: '0 0 32px 0',
+    maxWidth: '100%',
+    whiteSpace: 'normal',
   },
   grid: {
     display: 'grid',
@@ -109,6 +137,7 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'space-between',
     backdropFilter: 'blur(10px)',
+    minHeight: '280px',
   },
   cardHeader: {
     display: 'flex',

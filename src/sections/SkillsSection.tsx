@@ -49,7 +49,7 @@ const SkillsSection: React.FC = () => {
       <h2 style={styles.sectionTitle}>03. Habilidades & Tecnologias</h2>
       
       <p style={styles.introText}>
-        Ao longo do curso na FATEC, venho aprimorando minhas competências técnicas através de projetos práticos e colaborativos. Aqui estão as principais tecnologias com as quais trabalho atualmente:
+        Ao longo do curso na FATEC, venho aprimorando minhas competências técnicas por meio de projetos práticos e colaborativos. Aqui estão as principais tecnologias com as quais trabalho atualmente:
       </p>
 
       <div style={styles.grid}>
@@ -85,7 +85,7 @@ const SkillsSection: React.FC = () => {
           >
             <img 
               src={ciscoBadge} 
-              alt="Cisco Badge" 
+              alt="Certificado Cisco" 
               style={styles.certImage} 
             />
           </a>

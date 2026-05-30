@@ -2,11 +2,11 @@ import React from 'react';
 
 const Navbar: React.FC = () => {
   return (
-    <nav style={styles.nav}>
-      <ul style={styles.ul}>
-        <li style={styles.li}><a href="#Perfil" style={styles.a}>01. Perfil</a></li>
-        <li style={styles.li}><a href="#Projetos" style={styles.a}>02. Projetos</a></li>
-        <li style={styles.li}><a href="#Habilidades" style={styles.a}>03. Habilidades</a></li>
+    <nav style={styles.nav} aria-label="Navegação principal">
+      <ul style={styles.ul} className="nav-list">
+        <li style={styles.li}><a href="#perfil" style={styles.a} className="nav-link">01. Perfil</a></li>
+        <li style={styles.li}><a href="#portfolio" style={styles.a} className="nav-link">02. Projetos</a></li>
+        <li style={styles.li}><a href="#habilidades" style={styles.a} className="nav-link">03. Habilidades</a></li>
       </ul>
     </nav>
   );
@@ -18,7 +18,7 @@ const styles = {
     top: 0,
     left: 0,
     width: '100%',
-    height: '70px',
+    height: '60px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -32,7 +32,7 @@ const styles = {
     padding: 0,
     margin: 0,
     display: 'flex',
-    gap: '40px', // Espaço entre os itens do menu
+    gap: '28px',
   },
   li: {
     textAlign: 'center',
@@ -40,11 +40,11 @@ const styles = {
   a: {
     color: '#15ad1c',
     textDecoration: 'none',
-    fontSize: '2rem',
+    fontSize: '1rem',
     fontWeight: 'bold',
     fontFamily: 'Cascadia Code',
     transition: '0.3s',
-    letterSpacing: '1px',
+    letterSpacing: 0,
   }
 } as const;
 

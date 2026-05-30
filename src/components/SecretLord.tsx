@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import lordSprite from '../assets/lordSprite.png';
 import githubIcon from '../../public/github (2).svg';
-import gmailIcon from '../../public/gmail.svg'; 
+import linkedinIcon from '../../public/Linkedin.svg';
 
 const PixelArtFooter: React.FC = () => {
   const footerRef = useRef<HTMLElement | null>(null);
@@ -38,13 +38,13 @@ const PixelArtFooter: React.FC = () => {
 
           <div style={styles.contactLinks}>
             <a href="https://github.com/NadlaFernandes" target="_blank" rel="noreferrer" style={styles.linkItem}>
-              <img src={githubIcon} alt="" style={styles.smallIcon} />
+              <img src={githubIcon} alt="GitHub" style={styles.smallIcon} />
               <span>/NadlaFernandes</span>
             </a>
 
-            <a href="mailto:nf17476@gmail.com" style={styles.linkItem}>
-              <img src={gmailIcon} alt="" style={styles.smallIcon} />
-              <span>nf17476@gmail.com</span>
+            <a href="https://www.linkedin.com/in/nadla-ferreira-4646433a8/" target="_blank" rel="noreferrer" style={styles.linkItem}>
+              <img src={linkedinIcon} alt="LinkedIn" style={styles.smallIcon} />
+              <span>/nadla-ferreira-4646433a8</span>
             </a>
           </div>
         </div>
@@ -172,6 +172,7 @@ const styles = {
   smallIcon: {
     width: '60px',
     height: '60px',
+    borderRadius: '14px',
   },
   copy: {
     color: '#666',

@@ -15,7 +15,7 @@ function App() {
       <div style={{ 
         maxWidth: '1200px', 
         margin: '0 auto', 
-        padding: '80px 20px 0 20px' // 80px de topo para compensar a altura do menu
+        padding: '70px 20px 0 20px'
       }}>
         
         <section id="perfil" style={sectionStyle}>
@@ -37,10 +37,11 @@ function App() {
 }
 
 const sectionStyle = {
-  minHeight: '100vh',
+  minHeight: 'auto',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
+  padding: '48px 0',
   borderBottom: '1px solid rgb(0, 255, 13)',
 }as const;
 export default App;

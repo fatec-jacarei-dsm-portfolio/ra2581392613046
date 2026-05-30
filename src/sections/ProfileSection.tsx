@@ -10,21 +10,20 @@ const ProfileSection: React.FC = () => {
       <div style={styles.content}>
         {/* Lado Esquerdo: Texto e Botões */}
         <div style={styles.textSide}>
-          <h2 style={styles.greeting}>Olá! Bem vindo ao meu portifólio eu me chamo</h2>
+          <h2 style={styles.greeting}>Olá! Bem-vindo ao meu portfólio, eu me chamo</h2>
           <h1 style={styles.name}>Nadla Fernandes Ferreira</h1>
           <h3 style={styles.role}>Desenvolvedora de Software em Formação</h3>
           
           <div style={styles.bio}>
             <p>
-              Sou estudante de Desenvolvimento de Software Multiplataforma na 
-              <span style={styles.highlight}> FATEC Jacareí - Professor Francisco de Moura</span>, 
-              estando atualmente no 2° semestre do curso. Gosto de resolver problemas através do código com foco em sistemas e aplicações web versáteis utilizando tecnologias como:
-              React, TypeScript e Python. Aqui no meu portifólio esta disponivel algumas informações minhas e de projetos feitos durante minha trajetoria no curso. Fique à vontade para ver!  
+              Sou estudante de Desenvolvimento de Software Multiplataforma na
+              <span style={styles.highlight}> FATEC Jacareí.</span> Gosto de resolver problemas por meio do código, com foco em sistemas e aplicações web versáteis utilizando tecnologias como React, TypeScript e Python.
+              Aqui no meu portfólio estão algumas informações sobre mim e projetos desenvolvidos ao longo da minha trajetória acadêmica. Fique à vontade para explorar!
             </p>
           </div>
 
           <div style={styles.buttonContainer}>
-            <a href="#portfolio" style={styles.button}>Ver Projetos</a>
+            <a href="#portfolio" style={styles.button} className="profile-button">Ver Projetos</a>
             
             {/* Botão LinkedIn Ajustado com Ícone */}
             <a 
@@ -32,13 +31,10 @@ const ProfileSection: React.FC = () => {
               target="_blank" 
               rel="noreferrer" 
               style={styles.outlineButton}
+              className="profile-button"
             >
               {/* O ÍCONE DO PUBLIC AQUI */}
-              <img 
-                src={linkedinIcon} 
-                alt="LinkedIn" 
-                style={{ width: '20px', height: '20px' }} 
-              />
+              <img src={linkedinIcon} alt="" style={{ width: '20px', height: '20px' }} />
               LinkedIn
             </a>
           </div>
@@ -50,7 +46,7 @@ const ProfileSection: React.FC = () => {
             
             {/* Círculo 1: Minha Foto */}
             <div className="venn-circle primary">
-              <img src={minhaFoto} alt="Nadla" className="venn-img" />
+              <img src={minhaFoto} alt="Foto de Nadla Fernandes Ferreira" className="venn-img" />
             </div>
             
             {/* Círculo 2: Fatec Jacareí */}
@@ -67,7 +63,7 @@ const ProfileSection: React.FC = () => {
 
 const styles = {
   container: {
-    padding: '40px 20px',
+    padding: '24px 20px',
     backgroundColor: 'transparent',
     position: 'relative' as const,
     zIndex: 1,
@@ -76,7 +72,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    gap: '60px',
+    gap: '36px',
     flexWrap: 'wrap' as const,
   },
   textSide: {
@@ -86,16 +82,16 @@ const styles = {
   greeting: {
     color: '#00ff41',
     fontFamily: 'Cascadia Code, monospace',
-    fontSize: '1.2rem',
+    fontSize: '1rem',
     margin: 0,
   },
   name: {
-    fontSize: '3.5rem',
+    fontSize: '2.7rem',
     margin: '10px 0',
     color: '#ffffff',
   },
   role: {
-    fontSize: '1.5rem',
+    fontSize: '1.25rem',
     color: '#15ad1c',
     marginBottom: '20px',
   },
@@ -105,7 +101,7 @@ const styles = {
   },
   bio: {
     lineHeight: '1.6',
-    fontSize: '1.1rem',
+    fontSize: '1rem',
     maxWidth: '600px',
     color: '#cccccc',
   },
@@ -113,11 +109,11 @@ const styles = {
     flex: 1,
     display: 'flex',
     justifyContent: 'center',
-    minWidth: '400px',
+    minWidth: '320px',
     backgroundColor: 'transparent',
   },
   buttonContainer: {
-    marginTop: '30px',
+    marginTop: '24px',
     display: 'flex',
     gap: '20px',
   },

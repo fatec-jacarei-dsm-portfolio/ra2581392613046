@@ -1,18 +1,267 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
     <title>Nadla Fernandes | Portfólio Dev</title>
-    
     <meta name="description" content="Portfólio de Nadla Fernandes Ferreira, estudante de Desenvolvimento de Software Multiplataforma na FATEC Jacareí." />
-    <script type="module" crossorigin src="./assets/index-DuSyHAST.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-_itUbQ0W.css">
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    
+    <canvas class="binary-background" aria-hidden="true"></canvas>
+
+    <nav class="navbar" aria-label="Navegação principal">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#perfil">01. Perfil</a></li>
+        <li><a class="nav-link" href="#portfolio">02. Projetos</a></li>
+        <li><a class="nav-link" href="#habilidades">03. Habilidades</a></li>
+      </ul>
+    </nav>
+
+    <main class="page">
+      <section class="section profile" id="perfil">
+        <div class="profile-content">
+          <div class="profile-text">
+            <p class="greeting">Olá! Bem-vindo ao meu portfólio, eu me chamo</p>
+            <h1 class="name">Nadla Fernandes Ferreira</h1>
+            <h2 class="role">Desenvolvedora de Software em Formação</h2>
+
+            <div class="bio">
+              <p>
+                Sou estudante de Desenvolvimento de Software Multiplataforma na
+                <span class="highlight">FATEC Jacareí.</span> Gosto de resolver
+                problemas por meio do código, com foco em sistemas e aplicações web
+                versáteis utilizando tecnologias como React, TypeScript e Python.
+                Aqui no meu portfólio estão algumas informações sobre mim e projetos
+                desenvolvidos ao longo da minha trajetória acadêmica. Fique à vontade
+                para explorar!
+              </p>
+            </div>
+
+            <div class="button-row">
+              <a class="button button-primary" href="#portfolio">Ver Projetos</a>
+              <a class="button button-outline" href="https://www.linkedin.com/in/nadla-ferreira-4646433a8/" target="_blank" rel="noreferrer">
+                <img class="inline-icon" src="./Linkedin.svg" alt="" />
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="profile-images">
+            <div class="venn-wrapper">
+              <div class="venn-circle primary">
+                <img class="venn-img" src="./assets/foto-perfil.jpg" alt="Foto de Nadla Fernandes Ferreira" />
+              </div>
+              <div class="venn-circle secondary">
+                <img class="venn-img" src="./assets/fatec-jacarei.jpg" alt="FATEC Jacareí" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="portfolio">
+        <h2 class="section-title">02. Projetos &amp; Experiência</h2>
+        <p class="section-note">* Não possuo projetos anteriores ao 2° semestre.</p>
+
+        <div class="project-grid">
+          <article class="portfolio-card">
+            <div class="card-header">
+              <span class="category">Acadêmico</span>
+              <a class="project-link" href="https://github.com/NadlaFernandes/FATEC-JCR-2DSM-BDR-2026-1-Nadla-Fernandes-Ferreira" target="_blank" rel="noreferrer" aria-label="Abrir repositório: Repositório de Banco de Dados Relacional">🔗</a>
+            </div>
+            <h3 class="card-title">Repositório de Banco de Dados Relacional (2º Semestre)</h3>
+            <p class="card-desc">Repositório contendo arquivos de aulas e atividades da disciplina de Banco de Dados Relacional (2º Semestre), ministradas pela professora Lucineide Pimenta.</p>
+            <p class="project-detail"><strong>Contribuição pessoal:</strong> organização dos materiais, resolução das atividades e prática de modelagem e consultas SQL.</p>
+            <p class="project-detail"><strong>Semestre:</strong> 2DSM - 1º Sem. 2026</p>
+            <ul class="tag-list">
+              <li class="tag">SQL</li>
+              <li class="tag">PostgreSQL</li>
+              <li class="tag">Banco de Dados Relacional</li>
+            </ul>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="card-header">
+              <span class="category">Acadêmico</span>
+              <a class="project-link" href="https://github.com/NadlaFernandes/Atividade-3-Mega-Sena-Desenvolvimento-Web-II" target="_blank" rel="noreferrer" aria-label="Abrir repositório: Servidor Mega-Sena">🔗</a>
+            </div>
+            <h3 class="card-title">Servidor Mega-Sena</h3>
+            <p class="card-desc">Aplicação full-stack com frontend em React e backend em Node.js (Express), utilizando Docker para o banco de dados.</p>
+            <p class="project-detail"><strong>Contribuição pessoal:</strong> desenvolvimento das funcionalidades da aplicação, integração entre interface e servidor e organização do ambiente com Docker.</p>
+            <p class="project-detail"><strong>Semestre:</strong> 2DSM - 1º Sem. 2026</p>
+            <ul class="tag-list">
+              <li class="tag">React</li>
+              <li class="tag">Node.js</li>
+              <li class="tag">Docker</li>
+              <li class="tag">Prisma</li>
+            </ul>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="card-header">
+              <span class="category">Acadêmico | Pessoal</span>
+              <a class="project-link" href="https://github.com/NadlaFernandes/nosso-site-reciclagem" target="_blank" rel="noreferrer" aria-label="Abrir repositório: Site Reciclagem">🔗</a>
+            </div>
+            <h3 class="card-title">Site Reciclagem</h3>
+            <p class="card-desc">Site criado durante o período em que eu estava matriculada no ICT - UNIFESP para a disciplina de Tecnologia e Meio Ambiente (TMA). Tem como objetivo conscientizar as pessoas sobre a importância da reciclagem e como ela pode ajudar a preservar o meio ambiente.</p>
+            <p class="project-detail"><strong>Contribuição pessoal:</strong> criação das páginas, estruturação do conteúdo e estilização visual do site.</p>
+            <p class="project-detail"><strong>Semestre:</strong> Projeto anterior ao curso de DSM</p>
+            <ul class="tag-list">
+              <li class="tag">CSS</li>
+              <li class="tag">JavaScript</li>
+              <li class="tag">HTML</li>
+            </ul>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="card-header">
+              <span class="category">Acadêmico</span>
+              <a class="project-link" href="https://github.com/NadlaFernandes/API-REST" target="_blank" rel="noreferrer" aria-label="Abrir repositório: API REST">🔗</a>
+            </div>
+            <h3 class="card-title">API - REST</h3>
+            <p class="card-desc">Atividade 4 da disciplina de Desenvolvimento Web II, com foco em desenvolver uma aplicação frontend em React TypeScript para consumir a API REST implementada na atividade 1 de Técnicas de Programação I.</p>
+            <p class="project-detail"><strong>Contribuição pessoal:</strong> implementação da interface, consumo dos endpoints da API e ajustes de integração com os dados.</p>
+            <p class="project-detail"><strong>Semestre:</strong> 2DSM - 1º Sem. 2026</p>
+            <ul class="tag-list">
+              <li class="tag">CSS</li>
+              <li class="tag">TypeScript</li>
+              <li class="tag">HTML</li>
+              <li class="tag">Dockerfile</li>
+            </ul>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="card-header">
+              <span class="category">Acadêmico</span>
+              <a class="project-link" href="https://github.com/NadlaFernandes/Desenvolvimento-Web-II" target="_blank" rel="noreferrer" aria-label="Abrir repositório: React Context">🔗</a>
+            </div>
+            <h3 class="card-title">React Context</h3>
+            <p class="card-desc">Desenvolvimento de um aplicativo em React com TypeScript para gerenciamento de dados entre componentes usando props e Context API, com foco no uso prático do React Context. Atividade da disciplina de Desenvolvimento Web II.</p>
+            <p class="project-detail"><strong>Contribuição pessoal:</strong> construção dos componentes, aplicação do Context API e organização do fluxo de dados da interface.</p>
+            <p class="project-detail"><strong>Semestre:</strong> 2DSM - 1º Sem. 2026</p>
+            <ul class="tag-list">
+              <li class="tag">CSS</li>
+              <li class="tag">TypeScript</li>
+              <li class="tag">HTML</li>
+              <li class="tag">JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="card-header">
+              <span class="category">Acadêmico</span>
+              <a class="project-link" href="https://github.com/NadlaFernandes/atividade-mega-sena" target="_blank" rel="noreferrer" aria-label="Abrir repositório: React Routes">🔗</a>
+            </div>
+            <h3 class="card-title">React Routes</h3>
+            <p class="card-desc">Desenvolvimento de um aplicativo React com TypeScript para gerar sugestões automáticas de apostas para Mega-Sena.</p>
+            <p class="project-detail"><strong>Contribuição pessoal:</strong> implementação das rotas, componentes da interface e lógica de geração das sugestões.</p>
+            <p class="project-detail"><strong>Semestre:</strong> 2DSM - 1º Sem. 2026</p>
+            <ul class="tag-list">
+              <li class="tag">TypeScript</li>
+              <li class="tag">JavaScript</li>
+              <li class="tag">HTML</li>
+            </ul>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="card-header">
+              <span class="category">ABP</span>
+              <a class="project-link" href="https://github.com/abpundefined/2DSM-ABP-UNDEFINED" target="_blank" rel="noreferrer" aria-label="Abrir repositório: ABP Chatbot Fatec Jacareí">🔗</a>
+            </div>
+            <h3 class="card-title">ABP - Chatbot Fatec Jacareí</h3>
+            <p class="card-desc">Projeto em desenvolvimento feito pelo grupo Undefined para a ABP, com o objetivo de criar um chatbot para a secretaria acadêmica da FATEC Jacareí. Estou atuando como desenvolvedora backend no projeto.</p>
+            <p class="project-detail"><strong>Contribuição pessoal:</strong> atuação no backend, apoio na estrutura de dados e colaboração nas integrações necessárias para o chatbot.</p>
+            <p class="project-detail"><strong>Semestre:</strong> 2DSM - 1º Sem. 2026</p>
+            <ul class="tag-list">
+              <li class="tag">TypeScript</li>
+              <li class="tag">JavaScript</li>
+              <li class="tag">HTML</li>
+              <li class="tag">SQL</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="habilidades">
+        <h2 class="section-title">03. Habilidades &amp; Tecnologias</h2>
+        <p class="intro-text">Ao longo do curso na FATEC, venho aprimorando minhas competências técnicas por meio de projetos práticos e colaborativos. Aqui estão as principais tecnologias com as quais trabalho atualmente:</p>
+
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h3 class="group-title">Frontend</h3>
+            <ul class="skill-list">
+              <li><img class="skill-icon" src="./react.svg" alt="" />React</li>
+              <li><img class="skill-icon" src="./typescript.svg" alt="" />TypeScript</li>
+              <li><img class="skill-icon" src="./html5.svg" alt="" />HTML5</li>
+              <li><img class="skill-icon" src="./css3.svg" alt="" />CSS3 / Tailwind</li>
+            </ul>
+          </div>
+
+          <div class="skill-box">
+            <h3 class="group-title">Backend &amp; DB</h3>
+            <ul class="skill-list">
+              <li><img class="skill-icon" src="./python.svg" alt="" />Python</li>
+              <li><img class="skill-icon" src="./nodejs.svg" alt="" />Node.js</li>
+              <li><img class="skill-icon" src="./postgresql.svg" alt="" />PostgreSQL</li>
+              <li><img class="skill-icon" src="./sqlserver.svg" alt="" />SQL Server</li>
+            </ul>
+          </div>
+
+          <div class="skill-box">
+            <h3 class="group-title">Ferramentas &amp; Outros</h3>
+            <ul class="skill-list">
+              <li><img class="skill-icon" src="./docker.svg" alt="" />Docker</li>
+              <li><img class="skill-icon" src="./github.svg" alt="" />Git/GitHub</li>
+              <li><img class="skill-icon" src="./chocolatey.svg" alt="" />Chocolatey</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="extra-info">
+          <h3 class="sub-title">Outras informações</h3>
+          <div>
+            <p class="label">Certificados:</p>
+            <a class="cert-link" href="https://www.credly.com/badges/1745cbff-918f-4041-a31b-5096feed5159/linked_in_profile" target="_blank" rel="noreferrer">
+              <img class="cert-image" src="./assets/cisco-badge.png" alt="Certificado Cisco" />
+            </a>
+          </div>
+          <div class="info-bar">
+            <p>Disponibilidade para estágio e projetos freelance.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="main-info">
+            <div class="thanks-wrapper">
+              <h2 class="thanks-text">Obrigada pela visita ao meu repositório!</h2>
+              <h3 class="contact-label">Para entrar em contato acesse:</h3>
+            </div>
+
+            <div class="contact-links">
+              <a class="contact-link" href="https://github.com/NadlaFernandes" target="_blank" rel="noreferrer">
+                <img class="contact-icon" src="./github (2).svg" alt="GitHub" />
+                <span>/NadlaFernandes</span>
+              </a>
+              <a class="contact-link" href="https://www.linkedin.com/in/nadla-ferreira-4646433a8/" target="_blank" rel="noreferrer">
+                <img class="contact-icon" src="./Linkedin.svg" alt="LinkedIn" />
+                <span>/nadla-ferreira-4646433a8</span>
+              </a>
+            </div>
+          </div>
+
+          <p class="copy">© 2026 - Desenvolvido com HTML, CSS e JavaScript para FATEC Jacareí</p>
+        </div>
+
+        <div class="lord-fixed-container" aria-hidden="true">
+          <div class="lord-pixel-sprite"></div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

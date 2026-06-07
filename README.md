@@ -2,7 +2,7 @@
 
 **Aluno:** Nadla Fernandes Ferreira  
 **Curso:** Desenvolvimento de Software Multiplataforma  
-**Turma:** 2° Semestre - 2026
+**Turma:** 1° Semestre - 2026
 
 ---
 

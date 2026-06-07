@@ -17,5 +17,3 @@
 🎤 2DSM - [Vídeo](https://youtu.be/3aevA20uuDI)  
 🎤 4DSM - [Vídeo](LINK_VIDEO_4DSM)  
 🎤 6DSM - [Vídeo](LINK_VIDEO_6DSM)
-
-

@@ -1,8 +1,8 @@
-<pre># Portfólio de Projetos - Fatec Jacareí
+# Portfólio de Projetos - Fatec Jacareí
 
-**Aluno:** [Nadla Fernandes Ferreira]  
+**Aluno:** Nadla Fernandes Ferreira  
 **Curso:** Desenvolvimento de Software Multiplataforma  
-**Turma:** [2° Semestre - 2026]
+**Turma:** 2° Semestre - 2026
 
 ---
 
@@ -16,4 +16,5 @@
 
 🎤 2DSM - [Vídeo](https://youtu.be/3aevA20uuDI)  
 🎤 4DSM - [Vídeo](LINK_VIDEO_4DSM)  
-🎤 6DSM - [Vídeo](LINK_VIDEO_6DSM)</pre>
+🎤 6DSM - [Vídeo](LINK_VIDEO_6DSM)
+
